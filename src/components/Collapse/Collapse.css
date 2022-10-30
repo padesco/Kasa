@@ -28,10 +28,9 @@
 
 .collapse__content {
     color: #FF6060;
-    display: none;
 }
 
-.collapse__list {
+.collapse__information {
     list-style: none;
     padding: 0;
     background-color: #F6F6F6;
@@ -43,12 +42,8 @@
     height: 100%;
 }
 
-.rotate {
+.collapse__arrow.true {
     transform: rotate(360deg);
-}
-
-.show {
-    display: contents;
 }
 
 @media screen and (max-width: 628px) {
@@ -63,7 +58,7 @@
     .collapse__arrow {
         width: 15px;
     }
-    .collapse__list {
+    .collapse__information {
         font-size: 12px;
         padding: 23px 7px 52px 11px;
     }
