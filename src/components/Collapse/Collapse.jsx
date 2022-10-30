@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import image from '../../assets/images/Vector-arrow.png';
 import './Collapse.css';
-// possible d'ajuster l'ouverture du collapse avec usestate
 
 function Collapse ({title, content}) {
   const [open, setOpen] = useState(false);
