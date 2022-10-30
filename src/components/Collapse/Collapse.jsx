@@ -9,7 +9,7 @@ function Collapse ({title, content}) {
     <div className="collapse">
       <button type="button" className="collapse__button" onClick={() => setOpen(!open)}>
         {title}
-        <img src={image} alt='flèche blanche' className="collapse__arrow"/>
+        <img src={image} alt='flèche blanche' className={`collapse__arrow ${open}`}/>
       </button>
       <div className="collapse__content">
         {open && <div className="collapse__information">{content}</div>}
