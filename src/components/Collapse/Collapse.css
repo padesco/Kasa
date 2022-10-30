@@ -27,8 +27,8 @@
 }
 
 .collapse__content {
-    display: none;
     color: #FF6060;
+    display: none;
 }
 
 .collapse__list {
@@ -49,4 +49,22 @@
 
 .show {
     display: contents;
+}
+
+@media screen and (max-width: 628px) {
+    .collapse {
+        margin: 20px 0;
+    }
+    .collapse__button {
+        height: 30px;
+        padding: 0 7px 0 12px;
+        font-size: 13px;
+    }
+    .collapse__arrow {
+        width: 15px;
+    }
+    .collapse__list {
+        font-size: 12px;
+        padding: 23px 7px 52px 11px;
+    }
 }

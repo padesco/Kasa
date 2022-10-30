@@ -9,6 +9,7 @@ import Collapse from '../../components/Collapse/Collapse';
 
 import './Lodging.css';
 
+// on utilise useParams pour récupérer l'id dans l'url
 const Lodging = () => {
   const { lodgingId } = useParams();
   const lodging = lodgingList.find((lodging) => lodging.id === lodgingId);
@@ -34,8 +35,12 @@ const Lodging = () => {
         </div>
       </div>
       <div className="lodging__dropdowns">
-        <div className="lodging__collapse"><Collapse title="Description" content={description} /></div>
-        <div className="lodging__collapse"><Collapse title="Équipement" content={equipments} /></div>
+        <div className ="lodging__collapse">
+          <Collapse className="lodging__collapse" title="Description" content={description} />
+        </div>
+        <div className ="lodging__collapse">
+          <Collapse className="lodging__collapse" title="Équipement" content={equipments} />
+        </div>
       </div>
     </div>
   );

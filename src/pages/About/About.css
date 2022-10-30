@@ -3,7 +3,19 @@
     flex-direction: column;
     align-items: center;
 }
+
+.about__banner {
+    width: 100%;
+    height: 223px;
+}
+
 .about__dropdowns {
     width: 85%;
+}
+
+@media screen and (max-width: 628px) {
+    .about__dropdowns {
+        width: 100%;
+    }
 }
 

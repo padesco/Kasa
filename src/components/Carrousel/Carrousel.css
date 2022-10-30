@@ -25,3 +25,15 @@
     justify-content: space-between;
     width: 100%;
 }
+
+@media screen and (max-width: 628px) {
+    .carrousel {
+        height: 255px;
+    }
+    .carrousel__picture {
+        border-radius: 10px;
+    }
+    .carrousel__previous img, .carrousel__next img {
+        width: 20px;
+    }
+}

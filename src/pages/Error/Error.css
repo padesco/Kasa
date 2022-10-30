@@ -5,7 +5,6 @@
 }
 
 .error__content {
-    margin: auto;
     text-align: center;
 }
 
@@ -23,8 +22,25 @@
 }
 
 .error__link {
-    padding: 150px 0 100px;
+    margin: 100px 0 100px;
     font-size: 18px;
     line-height: 142.6%;
     color: #FF6060;
+}
+
+@media screen and (max-width: 628px) {
+    .error__content {
+        margin-top: 200px;
+    }
+    .error__number {
+        font-size: 96px;
+    }
+    .error__text {
+        font-size: 18px;
+    }
+    .error__link {
+        border: 1px solid black;
+        font-size: 14px;
+        margin: 80px 0 35px;
+    }
 }

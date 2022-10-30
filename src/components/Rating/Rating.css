@@ -5,3 +5,12 @@
 .rating__icon {
     padding-left: 10px;
 }
+
+@media screen and (max-width: 628px) {
+    .rating img {
+        width: 20px;
+    }
+    .rating__icon {
+        padding-left: 5px;
+    }
+}

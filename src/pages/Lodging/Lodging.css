@@ -17,6 +17,7 @@
 
 .lodging__tags {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .lodging__dropdowns {
@@ -27,4 +28,28 @@
 
 .lodging__collapse {
     width: 45%;
+}
+
+@media screen and (max-width: 628px) {
+    .lodging__content {
+        flex-direction: column;
+    }
+    .lodging__title {
+        font-size: 18px;
+    }
+    .lodging__location {
+        font-size: 14px;
+    }
+    .lodging__rating-and-host {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .lodging__dropdowns {
+        flex-direction: column;
+        justify-content: inherit;
+    }
+    .lodging__collapse {
+        width: 100%;
+    }
 }

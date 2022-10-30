@@ -23,7 +23,9 @@ const About = () => {
 
   return (
     <div className="about">
-      <Banner image={image} alt='montagnes enneigées' />
+      <div className='about__banner'>
+        <Banner image={image} alt='montagnes enneigées' />
+      </div>
       <div className="about__dropdowns">
         <Collapse title="Fiabilité" content={content("fiability")} />
         <Collapse title="Respect" content={content("respect")} />

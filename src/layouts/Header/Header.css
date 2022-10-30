@@ -10,7 +10,6 @@ header {
 }
 
 .navlink {
-    width: 25%;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
@@ -19,8 +18,40 @@ header {
 .link {
     color: #FF6060;
     text-decoration: none;
+    margin-left: 57px;
 }
 
 .link.active {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1018px) {
+    header {
+        padding: 20px 20px 0;
+        height: 83px;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    header img {
+        width: 145px;
+    }
+    .navlink {
+        font-size: 12px;
+    }
+    .link {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 383px) {
+    header img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 215px) {
+    .navlink {
+        flex-direction: column;
+    }
 }

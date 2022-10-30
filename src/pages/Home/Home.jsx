@@ -11,7 +11,9 @@ import './Home.css';
 const Lodgings = () => {
   return (
     <div className="home">
-      <Banner image={image} texte="Chez vous, partout et ailleurs" alt="bord de mer avec côte rocheuse et sapin" />
+      <div className='home__banner'>
+        <Banner image={image} texte="Chez vous, partout et ailleurs" alt="bord de mer avec côte rocheuse et sapin" />
+      </div>
       <section className="home__lodgings">
         {lodgings.map((lodging) => {
           return (

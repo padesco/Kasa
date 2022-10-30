@@ -16,3 +16,18 @@ footer p {
     margin-top: 30px;
     margin-bottom: -30px;
 }
+
+@media screen and (max-width: 628px) {
+    footer img {
+        width: 122px;
+    }
+    footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 383px) {
+    footer img {
+        width: 30%;
+    }
+}

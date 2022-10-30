@@ -5,3 +5,9 @@ main {
     margin: 0 auto;
     padding: 0 100px 209px 100px;
 }
+
+@media screen and (max-width: 1018px) {
+    main {
+        padding: 0 20px 209px 20px;
+    }
+}
