@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import lodgingList from '../../assets/datas/lodgingList.json';
 
 import Carrousel from '../../components/Carrousel/Carrousel';
@@ -13,7 +13,10 @@ import './Lodging.css';
 const Lodging = () => {
   const { lodgingId } = useParams();
   const lodging = lodgingList.find((lodging) => lodging.id === lodgingId);
-  const { title, location, rating, host, equipments, description, pictures } =
+  if (lodging == null) {
+    return (<Navigate to="/error" />);
+  } else {
+    const { title, location, rating, host, equipments, description, pictures } =
     lodging;
 
   return (
@@ -45,5 +48,7 @@ const Lodging = () => {
     </div>
   );
 };
+};
+  
 
 export default Lodging;

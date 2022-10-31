@@ -9,13 +9,20 @@ import About from './pages/About/About';
 import Lodging from './pages/Lodging/Lodging';
 import Error from './pages/Error/Error';
 
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'; 
 
 const GlobalStyle = createGlobalStyle`
+    @font-face {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Montserrat',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+      src: url('./assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    }
     * {
       font-family: 'Montserrat';
       font-style: normal;
-      font-weight: 500;
       line-height: 142.6%;
       box-sizing: border-box;
       -moz-box-sizing: border-box;

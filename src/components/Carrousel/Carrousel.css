@@ -26,6 +26,10 @@
     width: 100%;
 }
 
+.carrousel__next img, .carrousel__previous img {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 628px) {
     .carrousel {
         height: 255px;

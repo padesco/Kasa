@@ -47,7 +47,6 @@
     }
     .lodging__dropdowns {
         flex-direction: column;
-        justify-content: inherit;
     }
     .lodging__collapse {
         width: 100%;
