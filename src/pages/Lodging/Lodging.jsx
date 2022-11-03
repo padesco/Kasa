@@ -40,10 +40,10 @@ const Lodging = () => {
       </div>
       <div className="lodging__dropdowns">
         <div className ="lodging__collapse">
-          <Collapse className="lodging__collapse" title="Description" content={description} />
+          <Collapse title="Description" content={description} />
         </div>
         <div className ="lodging__collapse">
-          <Collapse className="lodging__collapse" title="Équipement" content={equipments} />
+          <Collapse title="Équipement" content={equipments} />
         </div>
       </div>
     </div>

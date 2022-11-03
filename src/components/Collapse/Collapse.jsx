@@ -11,8 +11,16 @@ function Collapse ({title, content}) {
         {title}
         <img src={image} alt='flèche blanche' className={`collapse__arrow ${open}`}/>
       </button>
-      <div className="collapse__content">
-        {open && <div className="collapse__information">{content}</div>}
+      <div className={`collapse__content ${open}`}>
+        {Array.isArray(content) ? (
+          <ul className="collapse__information">
+            {content.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="collapse__information">{content}</p>
+        )}
       </div>
     </div>
   );

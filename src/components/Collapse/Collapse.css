@@ -28,6 +28,11 @@
 
 .collapse__content {
     color: #FF6060;
+    display: none;
+}
+
+.collapse__content.true {
+    display: contents;
 }
 
 .collapse__information {
@@ -60,6 +65,6 @@
     }
     .collapse__information {
         font-size: 12px;
-        padding: 23px 7px 52px 11px;
+        padding: 23px 7px 12px 11px;
     }
 }
