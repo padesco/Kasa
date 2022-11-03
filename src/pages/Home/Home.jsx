@@ -15,6 +15,7 @@ const Lodgings = () => {
         <Banner image={image} texte="Chez vous, partout et ailleurs" alt="bord de mer avec côte rocheuse et sapin" />
       </div>
       <section className="home__lodgings">
+        {/* Loop to display lodgings */}
         {lodgings.map((lodging) => {
           return (
             <article key={lodging.id}>

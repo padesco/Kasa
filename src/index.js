@@ -10,7 +10,7 @@ import Lodging from './pages/Lodging/Lodging';
 import Error from './pages/Error/Error';
 
 import { createGlobalStyle } from 'styled-components'; 
-
+// configuration du style global
 const GlobalStyle = createGlobalStyle`
     @font-face {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
       position: relative;
     }
 `
-
+// Création du contenu et des routes
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

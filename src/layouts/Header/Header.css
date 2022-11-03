@@ -50,7 +50,7 @@ header {
     }
 }
 
-@media screen and (max-width: 215px) {
+@media screen and (max-width: 236px) {
     .navlink {
         flex-direction: column;
     }

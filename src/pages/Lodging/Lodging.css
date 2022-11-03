@@ -52,3 +52,14 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 290px) {
+    .lodging__tags {
+        justify-content: center;
+    }
+    .lodging__rating-and-host {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

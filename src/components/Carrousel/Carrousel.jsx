@@ -9,7 +9,7 @@ import './Carrousel.css';
 const Carrousel = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
-
+  // utilisation de ternaires pour aller à l'image suivante ou précèdente
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -20,8 +20,10 @@ const Carrousel = ({ slides }) => {
 
   return (
     <div className="carrousel">
+      {/* Loop to display pictures */}
       {slides.map((picture, index) => {
         return (
+          // utilisation d'un ternaire pour que le className s'applique sur l'image actuelle affiché
           <div key={index} className={index === current ? 
           "carrousel__active" : null }>
             {index === current && (
@@ -30,7 +32,6 @@ const Carrousel = ({ slides }) => {
           </div>
         );
       })}
-      {length > 1 ? (
         <div className="carrousel__arrow">
           <div className="carrousel__previous" onClick={prevSlide}>
             <img src={arrowBack} alt="fleche blanche vers la gauche" className="carrousel__previous-icon" />
@@ -39,7 +40,6 @@ const Carrousel = ({ slides }) => {
             <img src={arrowForward} alt="fleche blanche vers la droite" className="carrousel__next-icon" />
           </div>
         </div>
-      ) : null}
     </div>
   );
 };

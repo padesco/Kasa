@@ -44,3 +44,13 @@
         border-radius: inherit;
     }
 }
+
+@media screen and (max-width: 374px) {
+    .thumb {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .thumb__title {
+        width: fit-content;
+    }
+}

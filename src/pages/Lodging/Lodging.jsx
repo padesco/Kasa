@@ -27,6 +27,7 @@ const Lodging = () => {
           <h1 className="lodging__title">{title}</h1>
           <p className="lodging__location">{location}</p>
           <div className="lodging__tags">
+            {/* Loop to display tags */}
             {lodging.tags.map((tag, index) => (
               <Tags key={index} getTag={tag} />
             ))}
