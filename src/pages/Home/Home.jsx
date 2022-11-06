@@ -8,7 +8,7 @@ import Thumb from '../../components/Thumb/Thumb';
 import './Home.css';
 
 
-const Lodgings = () => {
+function Lodgings () {
   return (
     <div className="home">
       <div className='home__banner'>

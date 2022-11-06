@@ -2,7 +2,7 @@ import React from "react";
 
 import './Banner.css';
 
-const Banner = ({ image, texte }) => {
+function Banner ({ image, texte }) {
   return (
     <div className="banner">
       <img src={image} alt="bannière" className="banner__img" />

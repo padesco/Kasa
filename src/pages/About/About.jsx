@@ -1,9 +1,10 @@
 import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
+
 import image from '../../assets/images/banner-about.png';
 import './About.css';
 
-const About = () => {
+function About () {
   // Switch to display content in the dropdown by title
   const content = (title) => {
     switch (title) {

@@ -10,7 +10,7 @@ import Collapse from '../../components/Collapse/Collapse';
 import './Lodging.css';
 
 // on utilise useParams pour récupérer l'id dans l'url
-const Lodging = () => {
+function Lodging () {
   const { lodgingId } = useParams();
   const lodging = lodgingList.find((lodging) => lodging.id === lodgingId);
   if (lodging == null) {

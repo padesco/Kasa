@@ -2,7 +2,7 @@ import React from "react";
 
 import './Thumb.css';
 
-const Thumb = ({ image, title }) => {
+function Thumb ({ image, title }) {
   return (
     <div className="thumb">
       <img src={image} alt="" className="thumb__img" />

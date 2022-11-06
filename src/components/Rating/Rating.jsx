@@ -5,7 +5,8 @@ import redstar from "../../assets/images/Vector-redstar.svg";
 import greystar from "../../assets/images/Vector-greystar.svg";
 import './Rating.css';
 
-const Rating = ({ rating }) => {
+function Rating ({ rating }) {
+  // on définie que la notation de l'hôte est sur 5 étoiles
   const stars = [1, 2, 3, 4, 5];
 
   return (

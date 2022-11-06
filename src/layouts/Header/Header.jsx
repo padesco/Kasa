@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import LogoHeader from '../../assets/images/LOGO-header.svg';
 
-const Header = () => {
+function Header () {
     return (
         <header>
           <img src={LogoHeader} alt="Logo Kasa rouge" />

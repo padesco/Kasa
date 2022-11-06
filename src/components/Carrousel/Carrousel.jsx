@@ -6,15 +6,22 @@ import arrowBack from '../../assets/images/arrow-back.svg';
 import arrowForward from '../../assets/images/arrow-forward.svg';
 import './Carrousel.css';
 
-const Carrousel = ({ slides }) => {
+function Carrousel ({ slides }) {
+  // on crée un state "current" et une fonction "setCurrent"pour mettre à jour ce state
+  // on attribue une valeur initiale avec "useState"
   const [current, setCurrent] = useState(0);
+  // on détermine le nombre d'image pour afficher les flèches de défilement ou non
   const length = slides.length;
   // utilisation de ternaires pour aller à l'image suivante ou précèdente
   const nextSlide = () => {
+    // si l'index image est strictement égale à la dernière image alors on retourne à l'image index 0 (première image)
+    // sinon on passe à l'image index suivante
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
+    // si l'index image est strictement égale à l'index 0 alors on retourne à l'image index length -1 (dernière image)
+    // sinon on passe à l'image index précèdente
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
@@ -32,6 +39,7 @@ const Carrousel = ({ slides }) => {
           </div>
         );
       })}
+      {/** si le nombre d'image est strictement supérieur à 1 alors on affiche les flèches du carrousel */}
       {length > 1 &&
         <div className="carrousel__arrow">
           <div className="carrousel__previous" onClick={prevSlide}>
