@@ -13,12 +13,7 @@ import { createGlobalStyle } from 'styled-components';
 // configuration du style global
 const GlobalStyle = createGlobalStyle`
     @font-face {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Montserrat',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-      src: url('./assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+      font-family: 'Montserrat', sans-serif;
     }
     * {
       font-family: 'Montserrat';
