@@ -2,6 +2,8 @@ import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
 
 import image from '../../assets/images/banner-about.png';
+import imageMobile from '../../assets/images/banner-about-mobile.png';
+
 import './About.css';
 
 function About () {
@@ -22,10 +24,16 @@ function About () {
     }
   };
 
+  const width = window.innerWidth;
+
   return (
     <div className="about">
       <div className='about__banner'>
-        <Banner image={image} alt='montagnes enneigées' />
+        {width > 628 ?
+          <Banner image={image} alt='montagnes enneigées' />
+          :
+          <Banner image={imageMobile} alt='montagnes enneigées' />
+        }
       </div>
       <div className="about__dropdowns">
         <Collapse title="Fiabilité" content={content("fiability")} />

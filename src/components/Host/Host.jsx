@@ -3,7 +3,7 @@ import React from "react";
 import './Host.css';
 
 function Host ({ host }) {
-  // on sépare d'un espace le nom et le prénom de l'hôte
+  // on défini la prénom et le nom séparé par un espace
   const isHostSplited = host.name.split(" ");
   const [name, lastname] = isHostSplited;
 

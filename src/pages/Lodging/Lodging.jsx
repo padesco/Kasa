@@ -48,7 +48,7 @@ function Lodging () {
       </div>
     </div>
   );
-};
+  };
 };
   
 
